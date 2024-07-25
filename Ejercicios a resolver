@@ -1,0 +1,34 @@
+void Div(entero NumNat)
+Entero I
+cont=0
+Para I desde 1 hasta 10
+si (NumNat/I resto 0)
+  entonces escribir "I es divisor" 
+  cont=cont+1
+Finsi
+si (cont==2)
+estonces escribir"el numero es primo"
+finSi
+FinPara
+Escribir" La Cantidad de divisores",cont
+retorna()
+fin
+
+//Algoritmo Principal//
+Comienzo
+entero NumNat
+ Div(NumNat)
+ Fin
+ 
+
+
+
+
+
+
+
+
+
+
+
+

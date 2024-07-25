@@ -1,0 +1,99 @@
+void deportistas(alturaH[N])
+comienzo 
+  entero i
+     Para i desde 0 hasta N-1
+       escribir "ingrese estatura"
+       leer alturaH[i] 
+     finPara 
+     retorna()
+  fin 
+
+int AlturaDep(alturaH[N])
+comienzo 
+  real AcumProm,Promed
+  entero ContDep,i 
+    AcumProm=0
+    ContDep=0
+      Para i desde 0  hasta N-1
+	  AcumProm=AcumProm+AlturaH[i]
+	  FinPara
+	  Promed=AcumProm/N 
+	  para i desde 0 hasta N-1
+	  si alturaH[i]> Promed
+	   entonces ContDep=ContDep+1
+	  Finsi
+	  finpara 
+   retorna(ContDep)
+fin
+  
+  void menorEst(alturaH[N])
+  comienzo 
+  entero i
+  real Menormin
+  Menormin=999999
+ para i desde 0 hasta N-1
+si Menormin>alturaH[N]
+entonces Menormin=AlturaH[N]
+finPara
+escribir "La estatura minima es de",Menormin
+retorna()
+fin
+  
+  void MayotEst(alturaH[N])
+  comienzo 
+  entero i
+  real Mayormax
+ Mayormax=0
+ para i desde 0 hasta N-1
+si Mayormax<alturaH[N]
+entonces Mayormax=alturaH[N]
+finPara
+escribir "La estatura maxima es de",Mayormax
+retorna()
+fin
+
+void CantMisAlt (alturaH[N])
+comienzo
+entero i, contAlt
+real estatura 
+
+contAlt=0
+escribir "ingrese la estatura"
+leer estatura
+para i desde 0 hasta N-1
+si alturaH[N]=estatura
+entonces contAlt=contAlt+1
+finsi
+finpara 
+escribir "hay",contAlt,"deportistas que registran",estatura,"de altura"
+retorna()
+fin
+
+//Algoritmo principal//
+comienzo 
+Constante N=20
+real altura[N]
+deportistas(altura)
+escribir "Los deportistas que tienen una estatura mayor a la promedio son",AlturaDep(altura)
+menorEst(altura)
+MayotEst(altura)
+CantMisAlt (altura)
+fin
+
+
+	
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
